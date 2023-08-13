@@ -16,8 +16,12 @@ return (
             <Bars />
 
             <NavMenu>
-                <NavLink to='' activeStyle>
+                <NavLink to='/' activeStyle>
+                    Home
+                </NavLink>
 
+                <NavLink to='/about' activeStyle>
+                    About
                 </NavLink>
             </NavMenu>
         </Nav>
