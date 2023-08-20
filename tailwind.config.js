@@ -3,6 +3,23 @@ module.exports = {
   content: ["./src/*/*.js"],
   theme: {
     extend: {
+      keyframes: {
+        'wiggle': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-10px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          },
+        }
+      },
+
+      animation: {
+          'fade-in-down': 'fade-in-down 30s ease-out infinite'
+      },
+
       colors: {
         'bg': '#2B1439',
         'head': '#C995AF',
