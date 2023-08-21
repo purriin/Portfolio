@@ -14,25 +14,25 @@ export default function Home() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           
           <div className="text-left">
-            <p className="mt-6 text-lg leading-8 text-bk fade_left">
+            <p className="mt-6 text-lg leading-8 text-bk fade_left paragraph">
               Nice to meet you, my name is
             </p>
-            <h1 class="text-7xl font-bold tracking-tight text-head  fade_left">
+            <h1 class="text-7xl font-bold tracking-tight text-head fade_left title">
               Shannon Jones
             </h1>
-            <h2 class="mt-3 text-4xl font-semibold tracking-tight text-txt fade_left">
+            <h2 class="mt-2 text-4xl font-semibold tracking-tight text-txt fade_left heading">
               Software Engineer
             </h2>
-            <p className="mt-6 text-lg leading-8 text-op fade_left">
+            <p className="mt-5 text-lg leading-8 text-op fade_left paragraph">
               I'm currently a 3rd year Computer Engineering student studying at the University of Toronto. 
             </p>
 
           </div>
 
-          <div className="sm:flex sm:justify-left flex mt-4 space-x-5">
+          <div className="sm:flex sm:justify-left flex mt-10 space-x-5">
             <div className="transition-color ease-in-out duration-200 relative rounded-full px-3 py-1 text-sm leading-6 ring-1 ring-op hover:ring-bk fade_left">
               {' '}
-              <a href="/about" className="transition-color ease-in-out duration-200 font-semibold text-head hover:text-bk">
+              <a href="/about" className="transition-color ease-in-out duration-200 font-semibold text-head hover:text-bk paragraph">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Read more <span aria-hidden="true">&rarr;</span>
               </a>

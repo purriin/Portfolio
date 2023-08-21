@@ -44,7 +44,7 @@ const Header = () => {
 
             <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-                <Link to={item.href} className="transition-all ease-in-out duration-200 text-sm font-semibold leading-6 text-txt hover:text-head">
+                <Link to={item.href} className="transition-all ease-in-out duration-200 text-sm font-semibold leading-6 text-txt hover:text-head paragraph">
                 {item.name}
                 </Link>
             ))}
@@ -80,7 +80,7 @@ const Header = () => {
                 <div className="-my-6 divide-y divide-bg">
                 <div className="space-y-2 py-6">
                     {navigation.map((item) => (
-                    <Link to={item.href} className="transition-color ease-in-out duration-200 -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-op hover:bg-bg hover:text-head">
+                    <Link to={item.href} className="transition-color ease-in-out duration-200 -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-op hover:bg-bg hover:text-head paragraph">
                     {item.name}
                     </Link>
                     ))}

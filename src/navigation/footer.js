@@ -4,12 +4,12 @@ const Footer = () => {
     return (
     <footer class="bg-white dark:bg-ft">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 fade">
-          <div class="md:flex md:justify-center">
+          <div class="flex justify-center">
 
-            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div class="grid grid-cols-2 gap-10">
               <div>
-                <h2 class="mb-6 text-sm font-bold text-head uppercase dark:text-head">Resources</h2>
-                <ul class="text-op dark:op font-medium">
+                <h2 class="mb-6 text-sm font-bold text-head uppercase dark:text-head heading">Resources</h2>
+                <ul class="text-op dark:op font-medium paragraph">
                   <li class="mb-4">
                     <a href="https://flowbite.com/" class="transition-color ease-in-out duration-200 hover:text-head">Flowbite</a>
                   </li>
@@ -20,8 +20,8 @@ const Footer = () => {
               </div>
 
               <div>
-                <h2 class="mb-6 text-sm font-bold text-head uppercase dark:text-head">Follow us</h2>
-                <ul class="text-op dark:op font-medium">
+                <h2 class="mb-6 text-sm font-bold text-head uppercase dark:text-head heading">Follow us</h2>
+                <ul class="text-op dark:op font-medium paragraph">
                   <li class="mb-4">
                     <a href="https://github.com/themesberg/flowbite" class="transition-color ease-in-out duration-200 hover:text-head">Github</a>
                   </li>
@@ -31,17 +31,6 @@ const Footer = () => {
                 </ul>
               </div>
               
-              <div>
-                <h2 class="mb-6 text-sm font-bold text-head uppercase dark:text-head">Legal</h2>
-                <ul class="text-op dark:text-op font-medium">
-                  <li class="mb-4">
-                    <a href="https://discord.gg/4eeurUVvTy" class="transition-color ease-in-out duration-200 hover:text-head">Privacy Policy</a>
-                  </li>
-                  <li>
-                    <a href="https://discord.gg/4eeurUVvTy" class="transition-color ease-in-out duration-200 hover:text-head">Terms &amp; Conditions</a>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
 
