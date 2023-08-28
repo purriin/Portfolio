@@ -17,8 +17,8 @@ export default function Home() {
             <p className="mt-6 text-lg leading-8 text-bk fade_left paragraph">
               Nice to meet you, my name is
             </p>
-            <h1 class="text-7xl font-bold tracking-tight text-head fade_left title">
-              Shannon Jones
+            <h1 class="text-6xl font-bold tracking-tight text-head fade_left title">
+              Shannon Victoria Jones
             </h1>
             <h2 class="mt-2 text-4xl font-semibold tracking-tight text-txt fade_left heading">
               Software Engineer

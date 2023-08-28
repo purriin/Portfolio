@@ -11,7 +11,7 @@ const About = () => {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
 
           <div className="text-left">
-            <h1 class="text-7xl font-bold tracking-tight text-head fade_left title">
+            <h1 class="text-6xl font-bold tracking-tight text-head fade_left title">
               About me
             </h1>
 

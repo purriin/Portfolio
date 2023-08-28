@@ -19,20 +19,22 @@
     letter-spacing: 0.05rem;
 }
 
+
+
 /* Scrollbar: */
 /* Width */
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 8px;
 }
   
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #1a0d26;
+    background: #2B1439;
 }
   
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #2B1439;
+    background: #1a0d26;
     width: 10px;
     border-radius: 5px;
 }
