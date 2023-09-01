@@ -11,22 +11,22 @@ const Footer = () => {
                 <h2 class="mb-6 text-sm font-bold text-head uppercase dark:text-head heading">Resources</h2>
                 <ul class="text-op dark:op font-medium paragraph">
                   <li class="mb-4">
-                    <a href="https://flowbite.com/" class="transition-color ease-in-out duration-200 hover:text-head">Flowbite</a>
+                    <a href="https://github.com/purriin" target="_blank" rel="noreferrer" class="transition-color ease-in-out duration-200 hover:text-head">CV</a>
                   </li>
                   <li>
-                    <a href="https://tailwindcss.com/" class="transition-color ease-in-out duration-200 hover:text-head">Tailwind CSS</a>
+                    <a href="https://github.com/purriin" target="_blank" rel="noreferrer" class="transition-color ease-in-out duration-200 hover:text-head">My Website</a>
                   </li>
                 </ul>
               </div>
 
               <div>
-                <h2 class="mb-6 text-sm font-bold text-head uppercase dark:text-head heading">Follow us</h2>
+                <h2 class="mb-6 text-sm font-bold text-head uppercase dark:text-head heading">Follow me</h2>
                 <ul class="text-op dark:op font-medium paragraph">
                   <li class="mb-4">
-                    <a href="https://github.com/themesberg/flowbite" class="transition-color ease-in-out duration-200 hover:text-head">Github</a>
+                    <a href="https://github.com/purriin" target="_blank" rel="noreferrer" class="transition-color ease-in-out duration-200 hover:text-head">Github</a>
                   </li>
                   <li>
-                    <a href="https://discord.gg/4eeurUVvTy" class="transition-color ease-in-out duration-200 hover:text-head">Discord</a>
+                    <a href="https://instagram.com/purriin" target="_blank" rel="noreferrer" class="transition-color ease-in-out duration-200 hover:text-head">Instagram</a>
                   </li>
                 </ul>
               </div>
