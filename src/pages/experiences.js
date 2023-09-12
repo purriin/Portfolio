@@ -27,6 +27,7 @@ const Experiences = () => {
       </div>
       
       <Footer />
+      
     </div>
   )
 };

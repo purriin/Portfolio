@@ -3,7 +3,6 @@ import Header from "../navigation/header.js"
 import Footer from "../navigation/footer.js"
 import '../App.css';
 
-
 export default function Home() {
   return (
 
@@ -11,7 +10,7 @@ export default function Home() {
       <Header />
         
       <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-2xl py-56 sm:py-56 lg:py-56">
           
           <div className="text-left">
             <p className="mt-6 text-lg leading-8 text-bk fade_left paragraph">

@@ -19,6 +19,7 @@ function App() {
           <Route path='/skills' component={Skills} element={<Skills />}/>
         </Routes>
       </Router>
+
     </div>
   );
 }

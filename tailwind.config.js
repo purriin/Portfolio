@@ -20,6 +20,10 @@ module.exports = {
           'fade-in-down': 'fade-in-down 30s ease-out infinite'
       },
 
+      variants: {
+        animation: ["motion-safe"]
+      },
+
       colors: {
         'bg': '#2B1439',
         'head': '#C995AF',
