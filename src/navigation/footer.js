@@ -4,7 +4,7 @@ const Footer = () => {
     return (
       <div className="pt-16">
         <footer class="bg-white dark:bg-ft">
-          <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 fade">
+          <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div class="flex justify-center">
 
               <div class="grid grid-cols-2 gap-10">
@@ -36,7 +36,8 @@ const Footer = () => {
             </div>
 
             <hr class="my-6 border-ln sm:mx-auto dark:border-ln lg:my-8" />
-            <div class="sm:flex sm:items-center sm:justify-center">
+            
+            <div class="flex items-center justify-center">
             
               <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
                 <a href="https://www.github.com/purriin/" target="_blank" rel="noreferrer" class="transition-all ease-in-out duration-200 text-ic hover:text-head hover:-translate-y-1">
@@ -61,6 +62,7 @@ const Footer = () => {
                 </a>
               </div>
             </div>
+
             <div class="mt-1 sm:mt-6"></div>
           </div>
         </footer>

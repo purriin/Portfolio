@@ -8,7 +8,7 @@ const Skills = () => {
       <Header />
 
         <div className="relative isolate px-6 pt-14 lg:px-8">
-            <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+            <div className="mx-auto max-w-2xl py-36">
 
                 <div className="text-left">
                     <h1 class="text-6xl font-bold tracking-tight text-head fade_left title">
@@ -19,11 +19,11 @@ const Skills = () => {
                     
                 </div>
                 
-                <h2 class="text-4xl mt-10 font-bold tracking-tight text-txt fade_left heading">
+                <h2 class="text-4xl mt-10 font-bold tracking-tight text-txt fade heading">
                     Languages
                 </h2>
 
-                <div class="mt-10 grid grid-cols-3 gap-10 justify-center items-center text-txt fade_left">
+                <div class="mt-10 grid grid-cols-3 gap-10 justify-center items-center text-txt fade">
 
                     {/* C: */}
                     <div class="transition-all ease-in-out duration-200 hover:text-head hover:-translate-y-1 grid grid-cols-2 flex justify-center">
@@ -59,7 +59,7 @@ const Skills = () => {
                             <path fill="currentColor" d="M3 1.6a.25.25 0 0 0-.25.25v9.55c0 .09.048.172.125.217l4.859 2.802a.25.25 0 0 0 .245.003l5.141-2.817a.25.25 0 0 0 .13-.22V1.85A.25.25 0 0 0 13 1.6H3Zm-1.75.25C1.25.884 2.034.1 3 .1h10c.966 0 1.75.784 1.75 1.75v9.536a1.75 1.75 0 0 1-.909 1.534L8.7 15.738a1.75 1.75 0 0 1-1.716-.02l-4.858-2.802A1.75 1.75 0 0 1 1.25 11.4V1.85ZM5 4.35a.75.75 0 0 1 .75-.75h4.615a.75.75 0 0 1 .75.75v6.096a.75.75 0 0 1-.414.671l-2.308 1.154a.75.75 0 0 1-.67 0l-2.308-1.154a.75.75 0 0 1-.415-.67v-.578a.75.75 0 1 1 1.5 0v.114l1.558.778l1.557-.778V8.312H7a.75.75 0 1 1 0-1.5h2.615V5.1H5.75A.75.75 0 0 1 5 4.35Z"/>
                         </svg>
 
-                        <p className="text-currentColor font-semibold mt-5 justify-center">HTML</p>
+                        <p className="text-currentColor font-semibold mt-5 justify-center">CSS</p>
                     </div>
 
                     {/* Assembly: */}
@@ -109,13 +109,13 @@ const Skills = () => {
 
                 </div>
 
-                <div class="h-px my-20 bg-ln border-0 dark:bg-ln"> </div>
+                <div class="h-px my-10 bg-ln border-0 dark:bg-ln"> </div>
 
-                <h2 class="text-4xl mt-20 font-bold tracking-tight text-txt fade_left heading">
+                <h2 class="text-4xl my-10 font-bold tracking-tight text-txt fade heading">
                     Tools
                 </h2>
 
-                <div class="mt-10 grid flex grid-cols-3 gap-20 justify-center items-center align-center text-txt fade_left">
+                <div class="mt-10 grid flex grid-cols-3 gap-20 justify-center items-center align-center text-txt fade">
                     {/* VS Code: */}
                     <div class="transition-all ease-in-out duration-200 hover:text-head hover:-translate-y-1 grid grid-cols-2 flex justify-center">
                         <svg class="w-16 h-16" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
