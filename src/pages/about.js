@@ -11,7 +11,7 @@ const About = () => {
         <div className="relative isolate px-6 pt-14 lg:px-8">
           <div className="mx-auto max-w-5xl pt-36">
             <div className="text-left">
-              <h1 class="text-4xl font-bold tracking-tight text-head heading fade_left">
+              <h1 class="text-4xl font-bold tracking-tight text-head heading fade">
                 About
               </h1>
 

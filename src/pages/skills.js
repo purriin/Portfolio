@@ -8,10 +8,10 @@ const Skills = () => {
       <Header />
 
         <div className="relative isolate px-6 pt-14 lg:px-8">
-            <div className="mx-auto max-w-2xl py-36">
+            <div className="mx-auto max-w-2xl pt-36">
 
                 <div className="text-left">
-                    <h1 class="text-6xl font-bold tracking-tight text-head fade_left title">
+                    <h1 class="text-6xl font-bold tracking-tight text-head fade title">
                     Skills
                     </h1>
 
@@ -194,10 +194,20 @@ const Skills = () => {
                 
                 </div>
 
-                <div class="h-px my-20 bg-ln border-0 dark:bg-ln"> </div>
+                <div class="h-px mt-20 bg-ln border-0 dark:bg-ln"> </div>
 
 
             </div>
+        </div>
+
+        <div className="sm:flex sm:justify-center flex space-x-5 py-10">
+          <div className="transition-color ease-in-out duration-200 relative rounded-full px-3 py-1 text-sm leading-6 ring-1 ring-op hover:ring-bk fade_left">
+            {' '}
+            <a href="/skills" className="transition-color ease-in-out duration-200 font-semibold text-head hover:text-bk paragraph">
+              <span className="absolute inset-0" aria-hidden="true" />
+              Education <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
         </div>
       
       <Footer />
