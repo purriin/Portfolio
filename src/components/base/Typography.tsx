@@ -51,7 +51,9 @@ const getVariantStyle = (variant: TypographyProps['variant']) => {
 			return `
 				font-family: ${theme.fonts.fredoka};
 				font-size: 96px;
-                font-weight: bold;`
+                font-weight: bold;
+				letter-spacing: 0.1em;
+				line-height: 1.0;`
 		case 'h2':
 			return `
 				font-family: ${theme.fonts.fredoka};
@@ -65,9 +67,9 @@ const getVariantStyle = (variant: TypographyProps['variant']) => {
 		case 'sub':
 			return `
 				font-family: ${theme.fonts.source};
-                font-size: 3vh;
+                font-size: 4vh;
 				font-weight: 300;
-				letter-spacing: 0.1em;`
+				letter-spacing: 0.05em;`
 		case 'body1':
 			return `
 				font-family: ${theme.fonts.source};

@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-	<rect fill="#B1B1B2" width="24" height="24" />
+	<rect fill="#282131" width="48" height="48" />
 	<defs>
 		<linearGradient
 			id="a"
 			x1="0"
 			x2="0"
 			y1="0"
-			y2="1"
-			gradientTransform="rotate(327,0.5,0.5)"
+			y2="15"
+			gradientTransform="rotate(0,0.5,0.5)"
 		>
 			<stop offset="0" stop-color="#211C29" />
 			<stop offset="1" stop-color="#1C1F29" />
 		</linearGradient>
 	</defs>
-	<pattern id="b" width="72" height="72" patternUnits="userSpaceOnUse">
-		<circle fill="#B1B1B2" cx="36" cy="36" r="36" />
+	<pattern id="b" width="144" height="144" patternUnits="userSpaceOnUse">
+		<circle fill="#282131" cx="72" cy="72" r="72" />
 	</pattern>
 	<rect width="100%" height="100%" fill="url(#a)" />
-	<rect width="100%" height="100%" fill="url(#b)" fill-opacity="0.01" />
+	<rect width="100%" height="100%" fill="url(#b)" fill-opacity="0.5" />
 </svg>

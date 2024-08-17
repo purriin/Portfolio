@@ -6,24 +6,35 @@ import { IntroductionBackground } from '../../assets/backgrounds/IntroductionBac
 
 const TitleCard: React.FC = () => {
 	return (
-		<Container margin={theme.spacing[2]}>
+		<Container margin={theme.spacing[0]} display="grid">
 			<Container
+				zIndex={-1}
+				gridColumn="1"
+				gridRow="1"
+				width="75%"
 				display="flex"
 				justifySelf="center"
-				alignSelf="center"
-				width="100%"
-				alignItems="center"
-				justifyContent="center"
 			>
-				<IntroductionBackground
-					zIndex={0}
-					width="80%"
-					color={theme.color.DARK_BLUE}
-				/>
+				<IntroductionBackground color={theme.color.DARK_BLUE} />
 			</Container>
-			<Typography variant="h1" color={theme.color.WHITE}>
-				Shannon Victoria Jones
-			</Typography>
+			<Container gridColumn="1" gridRow="1" margin={theme.spacing[4]}>
+				<Typography
+					variant="h1"
+					color={theme.color.WHITE}
+					width="75%"
+					isUppercase
+				>
+					Shannon Victoria Jones
+				</Typography>
+
+				<Typography
+					variant="sub"
+					color={theme.color.GREY}
+					mt={theme.spacing[1]}
+				>
+					Software Engineer
+				</Typography>
+			</Container>
 		</Container>
 	)
 }
