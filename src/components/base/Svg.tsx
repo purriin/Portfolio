@@ -7,52 +7,43 @@ import {
 	MaxWidthProps,
 	MaxHeightProps,
 	PositionProps,
+	ZIndexProps,
 	SpaceProps,
-	TextAlignProps,
 	WidthProps,
 	HeightProps,
 	BackgroundProps,
-	LayoutProps,
-	GridProps,
 	BorderRadiusProps,
-	ZIndexProps,
 	color,
 	border,
 	display,
-	flexbox,
 	maxWidth,
 	position,
 	space,
-	textAlign,
 	width,
 	height,
 	maxHeight,
 	background,
-	layout,
-	grid,
 	borderRadius,
+	flexbox,
 	zIndex,
 } from 'styled-system'
 
-interface ContainerProps
+export interface SvgProps
 	extends BorderProps,
 		DisplayProps,
 		FlexboxProps,
 		MaxWidthProps,
 		PositionProps,
 		SpaceProps,
-		TextAlignProps,
 		WidthProps,
 		ColorProps,
 		HeightProps,
 		BackgroundProps,
-		LayoutProps,
-		GridProps,
 		BorderRadiusProps,
 		MaxHeightProps,
 		ZIndexProps {}
 
-const Container = styled.div<ContainerProps>`
+const Svg = styled.svg<SvgProps>`
 	${color}
 	${border}
     ${display}
@@ -60,15 +51,12 @@ const Container = styled.div<ContainerProps>`
     ${maxWidth}
     ${position}
     ${space}
-    ${textAlign}
     ${width}
     ${height}
     ${maxHeight}
     ${background}
-    ${layout}
-    ${grid}
     ${borderRadius}
     ${zIndex}
 `
 
-export default Container
+export default Svg

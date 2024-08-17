@@ -11,6 +11,18 @@ const theme = {
 		fredoka: '"Fredoka", sans-serif',
 		source: '"Source Sans 3", sans-serif',
 	},
+	spacing: [
+		'2vh',
+		'4vh',
+		'8vh',
+		'16vh',
+		'32vh',
+		'64vh',
+		'128vh',
+		'256vh',
+		'512vh',
+	],
+	borderRadius: ['5px', '10px', '25px'],
 }
 
 export default theme

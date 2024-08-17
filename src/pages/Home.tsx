@@ -1,14 +1,20 @@
 import React from 'react'
-import Typography from '../components/base/Typography'
-import theme from '../components/styles/theme'
+import Container from '../components/base/Container'
+import { NavigationBar } from '../components/NavigationBar'
+import TitleCard from './cards/TitleCard'
+import AboutCard from './cards/AboutCard'
+import ExperienceCard from './cards/ExperiencesCard'
+import ContactCard from './cards/ContactCard'
 
 const Home: React.FC = () => {
 	return (
-		<div className="bg-sparkle">
-			<Typography variant="h1" color={theme.color.PRIMARY}>
-				Shannon Victoria Jones
-			</Typography>
-		</div>
+		<Container>
+			<NavigationBar />
+			<TitleCard />
+			<AboutCard />
+			<ExperienceCard />
+			<ContactCard />
+		</Container>
 	)
 }
 

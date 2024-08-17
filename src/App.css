@@ -3,3 +3,25 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+	margin: 0;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.body {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+html {
+	background: url(/src/assets/backgrounds/Background.svg) no-repeat center
+		center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}

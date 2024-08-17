@@ -1,10 +1,41 @@
 import React from 'react'
 import styled from 'styled-components'
 import theme from '../styles/theme'
+import {
+	ColorProps,
+	BorderProps,
+	DisplayProps,
+	FlexboxProps,
+	FontWeightProps,
+	MaxWidthProps,
+	PositionProps,
+	SpaceProps,
+	TextAlignProps,
+	WidthProps,
+	color,
+	border,
+	display,
+	flexbox,
+	fontWeight,
+	maxWidth,
+	position,
+	space,
+	textAlign,
+	width,
+} from 'styled-system'
 
-interface TypographyProps {
+interface TypographyProps
+	extends BorderProps,
+		DisplayProps,
+		FlexboxProps,
+		FontWeightProps,
+		MaxWidthProps,
+		PositionProps,
+		SpaceProps,
+		TextAlignProps,
+		WidthProps,
+		ColorProps {
 	variant?: 'h1' | 'h2' | 'h3' | 'sub' | 'body1' | 'body2'
-	color?: string
 
 	isItalic?: boolean
 	isUnderline?: boolean
@@ -34,7 +65,9 @@ const getVariantStyle = (variant: TypographyProps['variant']) => {
 		case 'sub':
 			return `
 				font-family: ${theme.fonts.source};
-                font-size: 34px;`
+                font-size: 3vh;
+				font-weight: 300;
+				letter-spacing: 0.1em;`
 		case 'body1':
 			return `
 				font-family: ${theme.fonts.source};
@@ -57,7 +90,17 @@ const TypographyStyle = styled.p<TypographyProps>`
     ${(props) => props.isUnderline && 'text-decoration: underline;'}
     ${(props) => props.isStrikeThrough && 'text-decoration: line-through;'}
     ${(props) => props.isUppercase && 'text-transform: uppercase;'}
-    ${(props) => props.color && `color: ${props.color};`}
+
+	${color}
+	${border}
+	${display}
+	${flexbox}
+	${fontWeight}
+	${maxWidth}
+	${position}
+	${space}
+	${textAlign}
+	${width}
 `
 
 const Typography: React.FC<TypographyProps> = ({ ...props }) => {
