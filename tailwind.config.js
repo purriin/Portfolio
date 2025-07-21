@@ -1,18 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['./src/*/*.tsx'],
+	content: ['./src/*/*.js'],
 	theme: {
 		extend: {
-			backgroundImage: {
-				sparkle: 'url(/src/assets/backgrounds/Background.svg)',
+			keyframes: {
+				wiggle: {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(-10px)',
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)',
+					},
+				},
 			},
-			colors: {
-				DARK_PURPLE: '#282131',
-				DARK_BLUE: '#252A36',
-				PRIMARY: '#819132',
-				SECONDARY: '#156064',
-				GREY: '#B1B1B2',
-				WHITE: '#F5F6F5',
+
+			variants: {
+				animation: ['motion-safe'],
 			},
 		},
 	},

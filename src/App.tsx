@@ -1,10 +1,11 @@
 import React from 'react'
 import './App.css'
-import Home from './pages/Home'
-
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app'
 import { getAnalytics } from 'firebase/analytics'
+import Page from './pages'
+import { ThemeProvider } from 'styled-components'
+import theme from './ui-kit/theme/theme'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -26,7 +27,11 @@ const app = initializeApp(firebaseConfig)
 const analytics = getAnalytics(app)
 
 function App() {
-	return <Home />
+	return (
+		<ThemeProvider theme={theme}>
+			<Page />
+		</ThemeProvider>
+	)
 }
 
 export default App
