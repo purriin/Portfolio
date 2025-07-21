@@ -33,7 +33,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
 				my={5}
 				alignSelf={['center', 'center', 'end', 'end']}
 				justifySelf="center"
-				width={['100%', '100%', '60%', '60%']}
+				width={index > 0 ? ['100%', '100%', '60%', '60%'] : '100%'}
 			>
 				{children}
 			</Row>
