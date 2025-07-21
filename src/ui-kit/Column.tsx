@@ -24,6 +24,7 @@ import {
 	width,
 	height,
 	gridGap,
+	overflowY,
 	border,
 } from 'styled-system'
 
@@ -57,6 +58,7 @@ const ColumnStyle = styled.div<ColumnProps>`
 	${maxHeight}
 	${overflow}
 	${border}
+	${overflowY}
 `
 
 const Column: React.FC<ColumnProps> = ({ ...props }) => {

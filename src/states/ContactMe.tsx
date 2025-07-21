@@ -46,7 +46,7 @@ export const ContactMe: React.FC = () => {
 							placeholder="Enter your subject"
 						></Input>
 
-						<Typography variant="sub" color={theme.color.primary}>
+						<Typography variant="sub" color={theme.color.primary} mt={2}>
 							Message
 						</Typography>
 						<Input

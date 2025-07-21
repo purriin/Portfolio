@@ -22,12 +22,19 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
 			py={4}
 		>
 			<NavigationBar />
-			<Row my={5} alignSelf="center" justifySelf="center">
-				{index > 0 && (
-					<Box display={['none', 'none', 'block', 'block']}>
-						<NavigationIcons />
-					</Box>
-				)}
+
+			{index > 0 && (
+				<Box display={['none', 'none', 'block', 'block']}>
+					<NavigationIcons />
+				</Box>
+			)}
+
+			<Row
+				my={5}
+				alignSelf={['center', 'center', 'end', 'end']}
+				justifySelf="center"
+				width={['100%', '100%', '60%', '60%']}
+			>
 				{children}
 			</Row>
 		</Column>

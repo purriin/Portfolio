@@ -102,6 +102,15 @@ const ButtonStyle = styled.button<ButtonProps>`
 		}
 	}}
 
+	.arrow_button {
+		transition: margin-left 0.2s ease-in-out;
+	}
+
+	&:hover .arrow_button {
+		transition: margin-left 0.2s ease-in-out;
+		margin-left: 2vh;
+	}
+
 	${color}
 	${display}
     ${flexbox}
@@ -121,7 +130,13 @@ const Button: React.FC<ButtonProps> = ({ ...props }) => {
 			alignItems="center"
 		>
 			{props.children}
-			{props.arrow && <ArrowIcon ml={props.children ? 2 : 0} width="25%" />}
+			{props.arrow && (
+				<ArrowIcon
+					ml={props.children ? 2 : 0}
+					width="25%"
+					className="arrow_button"
+				/>
+			)}
 		</ButtonStyle>
 	)
 }

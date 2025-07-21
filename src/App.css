@@ -22,19 +22,19 @@ body,
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background: #2b1439;
+	background: #2c2539ff;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #1a0d26;
+	background: #191724;
 	width: 10px;
 	border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: #58376d;
+	background: #816a92aa;
 }
 
 /* Animations */
@@ -206,7 +206,7 @@ body,
 	cursor: pointer;
 	color: #ebbcba;
 	transform: translateX(0vh);
-	transition: transform 0.2s ease-in-out;
+	transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
 	&:hover {
 		color: #e2deedff;
 		transform: translateX(2vh);
@@ -218,4 +218,13 @@ body,
 	animation: fall_left_extra 0.5s;
 	transform: translateX(4vh);
 	transition: transform 0.3s ease-in-out;
+}
+
+.experience_row {
+	transition: transform 0.2s ease-in-out;
+	cursor: pointer;
+	&:hover {
+		transition: transform 0.2s ease-in-out;
+		transform: scale(1.03);
+	}
 }
