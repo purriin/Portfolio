@@ -63,7 +63,6 @@ const InputStyle = styled.input<InputProps>`
 
 	padding-top: ${theme.space[2]};
 	padding-bottom: ${theme.space[2]};
-	min-width: 350px;
 
 	&:focus {
 		outline: none;
@@ -90,7 +89,6 @@ const TextAreaStyle = styled.textarea<InputProps>`
     ${width}
     ${height}
 
-    min-width: 350px;
 	background-color: ${theme.color.white};
 	opacity: 0.7;
 	transition: opacity 0.3s ease;

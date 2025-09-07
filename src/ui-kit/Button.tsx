@@ -51,7 +51,7 @@ const ButtonStyle = styled.button<ButtonProps>`
 			case 'primary':
 			default:
 				return `
-				border-radius: ${theme.borderRadius.lg};
+					border-radius: ${theme.borderRadius.lg};
 					background-color: ${theme.color.primary};
 					transition: opacity 0.3s ease;
 					opacity: 0.7;
@@ -81,22 +81,27 @@ const ButtonStyle = styled.button<ButtonProps>`
 				`
 			case 'navigation':
 				return `
-				padding-left: ${theme.space[2]};
-				padding-right: ${theme.space[2]};
+					padding-left: ${theme.space[2]};
+					padding-right: ${theme.space[2]};
 
-				padding-top: ${theme.space[1]};
-				padding-bottom: ${theme.space[1]};
-				border-radius: ${theme.borderRadius.md};
+					padding-top: ${theme.space[1]};
+					padding-bottom: ${theme.space[1]};
+					border-radius: ${theme.borderRadius.md};
 					background-color: transparent;
 					color: ${theme.color.primary};
 					transition: opacity 0.3s ease, color 0.3s ease, background-color 0.3s ease;
 					opacity: 0.7;
 
-					&:hover {
-					background-color: ${theme.color.primary};
-					color: ${theme.color.dark};
+					&:hover:not([disabled]) {
+						background-color: ${theme.color.primary};
+						color: ${theme.color.dark};
 						opacity: 0.8;
 						transition: opacity 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+					}
+
+					&:disabled {
+						opacity: 0.3;
+						background-color: ${theme.color.dark};
 					}
 			`
 		}

@@ -28,7 +28,7 @@ export const ContactMe: React.FC = () => {
 				me a message.
 			</Typography>
 
-			<Column mt={3}>
+			<Column mt={3} width="80%">
 				<Form
 					action={EMAIL_LINK}
 					method="get"

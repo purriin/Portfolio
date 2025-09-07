@@ -14,6 +14,11 @@ export const NavigationBar: React.FC = () => {
 	const bear = useBearStore()
 	const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
 
+	const setState = (sectionIndex: number): void => {
+		bear.setIndex(sectionIndex)
+		setIsMenuOpen(false)
+	}
+
 	return (
 		<Column width="100%" px={1} py={3} gridGap={2}>
 			<Row alignItems="center" justifyContent="space-between" width="100%">
@@ -68,7 +73,8 @@ export const NavigationBar: React.FC = () => {
 							return (
 								<Button
 									variant="navigation"
-									onClick={() => bear.setIndex(sectionIndex)}
+									disabled={bear.index === sectionIndex}
+									onClick={() => setState(sectionIndex)}
 								>
 									{state.title}
 								</Button>
