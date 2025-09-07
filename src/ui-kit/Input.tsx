@@ -58,11 +58,7 @@ const InputStyle = styled.input<InputProps>`
 	font-family: ${theme.fonts.source};
 	border-radius: ${theme.borderRadius.sm};
 	color: ${theme.color.dark};
-	padding-left: ${theme.space[1]};
-	padding-right: ${theme.space[1]};
-
-	padding-top: ${theme.space[2]};
-	padding-bottom: ${theme.space[2]};
+	padding: ${theme.space[1]};
 
 	&:focus {
 		outline: none;
@@ -95,11 +91,7 @@ const TextAreaStyle = styled.textarea<InputProps>`
 	font-family: ${theme.fonts.source};
 	border-radius: ${theme.borderRadius.sm};
 	color: ${theme.color.dark};
-	padding-left: ${theme.space[1]};
-	padding-right: ${theme.space[1]};
-
-	padding-top: ${theme.space[2]};
-	padding-bottom: ${theme.space[2]};
+	padding: ${theme.space[1]};
 
 	&:focus {
 		outline: none;

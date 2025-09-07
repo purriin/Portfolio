@@ -35,7 +35,7 @@ export const ContactMe: React.FC = () => {
 					encType="text/plain"
 					className="fade_left"
 				>
-					<Column alignContent="center" justifyItems="center" gridGap={3}>
+					<Column alignContent="center" justifyItems="center" gridGap={2}>
 						<Typography variant="sub" color={theme.color.primary}>
 							Subject
 						</Typography>
@@ -46,12 +46,12 @@ export const ContactMe: React.FC = () => {
 							placeholder="Enter your subject"
 						></Input>
 
-						<Typography variant="sub" color={theme.color.primary} mt={2}>
+						<Typography variant="sub" color={theme.color.primary} mt={1}>
 							Message
 						</Typography>
 						<Input
 							type="textarea"
-							rows="4"
+							rows="3"
 							name="body"
 							id="body"
 							placeholder="Type your message"
@@ -60,9 +60,9 @@ export const ContactMe: React.FC = () => {
 						<Button
 							arrow
 							variant="primary"
-							width={200}
+							width="80%"
 							mx="auto"
-							my={3}
+							my={1}
 							padding={2}
 						>
 							Submit
